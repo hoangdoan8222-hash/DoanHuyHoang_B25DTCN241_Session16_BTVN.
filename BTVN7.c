@@ -6,16 +6,15 @@ int main() {
     char s[] = "Hello my gmail is test123@gmail.com";
     int letters = 0, digits = 0, specials = 0;
     int i;
-    int len = strlen(s); // luu d? dài chu?i 1 l?n
-
-    for (i = 0; i < len; i++) {  // i dã khai báo tru?c
+    int len = strlen(s);
+    for (i = 0; i < len; i++) {  
         char ch = s[i];
 
         if (isalpha(ch))
             letters++;
         else if (isdigit(ch))
             digits++;
-        else if (ch != ' ')  // kı t? d?c bi?t (không ph?i ch? cái, s?, kho?ng tr?ng)
+        else if (ch != ' ')  
             specials++;
     }
 
@@ -25,4 +24,5 @@ int main() {
 
     return 0;
 }
+
 
